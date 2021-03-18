@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="overlay">
+        <h1 class="olay">HOLA</h1>
+        <br>
+        <p class="olay">HOLA INTERIORS</p>
+    </div>
+
+    <div id="bg">
+        <nav><h4>Hola</h4></nav>
+        <div id="mbox">
+            <p>STUDIO</p>
+            <h1 class="ml3">LUXURY</h1>
+            <h1 class="ml3">INTERIORS</h1>
+        </div>
+        <div id="links">
+            <a href="#">HOME</a>
+            <a href="#bg">STUDIO</a>
+            <a href="#">WORK</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+    <div id="contact">
+        <hr>
+        <div id="cbox">
+            <p>CONTACT</p>
+            <h1>LET'S WORK</h1>
+            <h1>TOGETHER</h1>
+        </div>
+        <footer>
+            <div id="fbox">
+                <div class="info">
+                    <h3>GENERAL</h3>
+                    <p>info@Holainteriors.com</p>
+                    <p>+323 257 3357</p>
+                </div>
+                <div class="info">
+                    <h3>CAREERS</h3>
+                    <p>careers@Holainteriors.com</p>
+                    <p>+323 257 3357</p>
+                </div>
+                <div class="info">
+                    <h3>ADDRESS</h3>
+                    <p>Mechelsesteenweg 30-32</p>
+                    <p>2020 Ant</p>
+                    <p>Belgium</p>
+                </div>
+                <div class="info2">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        gsap.from('.olay',{stagger:.3,y:50,opacity:0,duration:1.2,delay:0.1,ease:'expo.inOut'});
+        gsap.fromTo('#overlay',{y:0},{delay:3,duration:2,ease:'expo.InOut',y:-1000});
+
+        gsap.fromTo('nav h4',{x:-200},{delay:4,duration:1.5,ease:'expo.InOut',x:0});
+        gsap.from('.ml3',{stagger:.3,y:50,opacity:0,duration:1.2,delay:5,ease:'expo.inOut'});
+
+        gsap.from('#cbox h1',{stagger:.3,y:50,opacity:0,duration:1.2,delay:6.5,ease:'expo.inOut'});
+        gsap.fromTo('footer',{y:200},{duration:1,delay:8,ease:'expo.InOut',y:0});
+        gsap.from('.info',{stagger:.3,y:50,opacity:0,duration:1.2,delay:8.2,ease:'expo.InOut'});
+        
+    </script>
+    
+</body>
+</html>

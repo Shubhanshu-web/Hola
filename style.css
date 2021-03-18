@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PlayFair Display';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22rem;
+    background-color: #eee;
+    position: absolute;
+}
+.olay h1{
+    color: goldenrod;
+}
+.olay p{
+    margin-top: 10px;
+}
+
+/* overlay ends here */
+
+#bg{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(7, 7, 248, 0.541); */
+    background-image: url(https://aebeleinteriors.com/wp-content/uploads/2020/10/studio-background-header-2250x1653.webp);
+    background-size: cover;
+    background-position: initial;
+}
+#bg nav{
+    width: 100%;
+    height: 70px;
+    padding: 20px 30px;
+    font-size: 30px;
+    color: #fff;
+    /* background-color: red; */
+}
+#bg #mbox{
+    width: 300px;
+    height: 200px;
+    padding: 20px 0;
+    color: #fff;
+    /* background-color: red; */
+    margin: 300px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#bg #mbox h1{
+    font-size: 50px;
+}
+#bg #links{
+    width: 100px;
+    height: 110px;
+    /* background-color: red; */
+    margin: -165px 1550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+#bg #links a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.9px;
+}
+#bg #links a:hover{
+    color: #ce9566;
+}
+
+/* bg ends here */
+
+#contact{
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua; */
+    background-image: url(images/bgimg1.jpeg);
+}
+#cbox{
+    width: 400px;
+    height: 300px;
+    /* background-color: red; */
+    color: #fff;
+    padding: 20px;
+    margin: 150px auto;
+}
+#cbox p{
+    border-bottom: 1px solid white;
+    line-height: 30px;
+}
+#cbox h1
+{
+    font-size: 55px;
+    /* font-family: 'ivar fine'; */
+}
+footer{
+    background-color: black;
+    color: #fff;
+}
+footer #fbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 280px;
+}
+footer #fbox .info{
+    min-width: 160px;
+    height: 100px;
+    /* background-color: rgb(7, 88, 61); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+footer #fbox .info2{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100px;
+    /* background-color: #ce9566; */
+}
